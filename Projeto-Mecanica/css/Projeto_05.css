@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Otomanopee One', sans-serif;
+    font-style:italic;
+    /* background-color: #ded4d3; */
+}
+
+div.clear{
+    clear: both;
+} 
+
+/* estilizando o headder */
+
+header{
+    width: 100%;
+    padding: 40px 0 15px 8%;
+}
+
+header .logo{
+    float: left;
+    width: 190px;
+    height: 100px;
+}
+
+header nav.menu-desktop{
+    float: right;
+    padding-right: 40px;
+}
+
+header nav.menu-mobile{
+    display: none;
+    background-image: url(../imagens/menuzin.png);
+    background-size: 100% 100%;
+    background-position: center;
+    color: black;
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+header nav.menu-mobile ul{
+    display: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 122px;
+    z-index: 999;
+    background-color: white;
+    border-top: 5px solid  #eb2d2d;
+    border-bottom: 5px solid  #eb2d2d;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    padding: 30px 20px;
+
+}
+
+header ul{
+    padding-right: 70px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* fim da estilizaçao do header ***********************************************************************/
+
+/* estizizando o banner */
+
+section.banner{
+    width: 100%;
+    height: calc(100vh - 130px);
+    min-height: 600px;
+    background-color: black;
+    background-image: url(../imagens/bg.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+div.conteudo-texto{
+    padding-top: 170px;
+    padding-left: 20%;
+    width: 100%;
+}
+
+div.img-texto{
+    background-image: url("../imagens/box-text.png");
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+}
+
+div.img2-texto{
+    background-image: url("../imagens/box-white-text.png");
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+}
+
+.img2-texto p{
+    color: black;
+    font-size: 30px;
+}
+
+p{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: -10px;
+    text-transform: uppercase;
+}
+
+div.conteudo-texto .img-texto:nth-of-type(2){
+    position: relative;
+    left: -15px;
+}
+
+div.conteudo-texto .img-texto:nth-of-type(3){
+    position: relative;
+    left: -30px;
+}
+
+div.conteudo-texto .img2-texto:nth-of-type(4){
+    position: relative;
+    left: -45px;
+}
+
+/* fim estilizaçao do banner ****************************************************************************/
+
+/* estilizando sessao de veiculos em destaque */
+
+section.carros-destaques{
+    padding: 90px 5%;
+}
+
+div.titulo-veiculos{
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.titulo-veiculos > h2{
+    display: inline-block;
+    background-color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0 40px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+div.linha{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+} 
+
+/* fim dos veiculos em destaque ************************************************************************ */
+
+/* estilizando a vitrine de carros */
+
+section.vitrine-carros{
+    padding: 90px 3%;
+}
+
+div.container-vitrine{
+    /* background-color: blanchedalmond; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 90px;
+}
+
+div.descricao{
+    width: 100%;
+    max-width: 600px;
+}
+
+div.descricao-car{
+    padding: 10px 2%;
+    text-align: justify;
+}
+
+div.descricao-car h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+div.descricao-car p{
+    font-size: 13px;
+    color: gray;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+div.descricao .img-car{
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 7px solid white;
+    position: relative;
+}
+
+div.descricao-car a{
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: tomato;
+    color: azure;
+    padding: 10px 10px;
+    border-top: 3px solid rgb(253, 164, 148);
+    border-bottom: 3px solid rgb(126, 19, 0);
+}
+
+/* fim da estilizacao *********************************************************************************************/
+
+/* estilizando os depoimentos */
+
+section.depoimentos{
+    display: flex;
+    flex-direction: row;
+}
+
+div.dep1{
+    width: 50%;
+    padding: 40px 12%;
+    background-color:cadetblue ;
+}
+
+div.dep1 h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+div.dep1 ul{
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+div.dep1 .btn{
+    position: relative;
+    top: -50px;  
+}
+
+div.dep1 a{
+    float: right;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: tomato;
+    color: azure;
+    padding: 10px 40px;
+    border-top: 3px solid rgb(253, 164, 148);
+    border-bottom: 3px solid rgb(126, 19, 0);
+}
+
+div.dep2{
+    width: 50%;
+    padding: 40px 5% 0 5%;
+    background-color:#eb2d2d ;
+}
+
+div.dep2 p{
+    font-size: 15px;
+    float: right;
+    padding-top: 25px;
+}
+
+div.dep2 h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+/* fim da estilizacao deps *****************************************************************************************/
+
+/* estilizacao do contato */
+
+section.contato{
+    padding: 80px 5%;
+}
+
+form{
+    max-width: 800px;
+    margin:50px auto;
+}
+
+form div.content{
+    float: left;
+    padding: 10px;
+}
+
+form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    font-style: italic;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+section.contato form div.content:nth-of-type(5){
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: tomato;
+    margin: 25px 15px;
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+}
+
+textarea{
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #ccc;
+    font-style: italic;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+/* fim da estiçizacao contato************************************************************************************** */
+
+/* estilizacao do footer */
+
+footer{
+    background-color:darkslategray;
+}
+
+footer nav{
+    float: left;
+}
+
+footer p{
+    float: right;
+    font-size: 13px;
+    padding: 30px 8%;
+}
+
+footer ul li{
+    float: left;
+    font-size: 15px;
+    padding: 30px 15px;
+    list-style: none;
+
+}
+
+footer ul{
+    padding-left: 8%;
+    width: 600px;
+}
+
+footer a{
+    text-decoration: none;
+    color: azure;
+}
+/* fim do footer ******************************************************************************************************/
+
+/* PAGINA DE VENDAS */
+
+/*  estilizacao da sidebar */
+
+section.pag-vendas{
+    min-height: 100%;
+    padding: 80px 0;
+}
+
+div.sidebar{
+    float: left;
+    width: 26%;
+}
+
+div.content-venda{
+    padding: 70px 0 0 80px;
+
+}
+
+div.sidebar .barra{
+    width: 90%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 18px;
+    position: relative;
+}
+
+div.barra .barra-prenche{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 18px;
+    background-image: linear-gradient(white, grey);
+    border-radius: 8px;
+}
+
+div.barra .pointer{
+    width: 15px;
+    height: 26px;
+    background-image: linear-gradient(white, gray);
+    border-radius: 6px;
+    border: 1px solid rgb(110, 110, 110);
+    position: absolute;
+    top: -4px;
+    left: calc(30% - 10px);
+}
+
+div.precos p{
+    font-size: 12px;
+    color: black;
+}
+
+div.precos{
+    padding-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form h3{
+    padding: 15px 0;
+}
+
+form div.anos{
+    padding-top: 6px;
+
+}
+
+div.anos input{
+    display: none;
+}
+
+div.anos span{
+    margin-left: 9px;
+}
+
+div.anos label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid rgb(110, 110, 110);
+    vertical-align: top;
+    position: relative;
+}
+
+div.cicle{
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: black;
+    border-radius: 10px;
+    display: none;
+}
+
+div.anos input[type=checkbox]:checked + label > .cicle{
+    display: block;
+}
+
+/* fim da sidebar ******************************************************************************************************/
+
+/* Estilizando a vitrine de carros */
+
+div.vitrine-carros{
+    width: 70%;
+    float: left;
+
+}
+
+div.descricao{
+    margin-left: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    max-width: 30%;
+}
+
+/* fim da estilizacao da vitrine***************************************************************************************** */
+
+/* inicio de estizacao dos detalhes */
+section.detalhes{
+    padding: 80px 2% 0 2%;
+}
+section.detalhes .content{
+    max-width: 1400px;
+    padding: 70px 0;
+    margin: 0 20%;
+}
+
+section.detalhes p{
+    color: black;
+    font-size: 13px;
+    text-transform: none;
+    padding: 20px 0;
+}
+
+section.detalhes a{
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: tomato;
+    color: azure;
+    padding: 10px 40px;
+    border-top: 3px solid rgb(253, 164, 148);
+    border-bottom: 3px solid rgb(126, 19, 0);
+}
+
+div.img-carro{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.container-detalhes{
+    float: left;
+    width: 42%;
+    padding-left: 30px;
+}
+
+div.car-destaque{
+    float: left;
+    width: 58%;
+}
+
+div.info-car{
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+    vertical-align: top;
+}
+
+div.info-img{
+    width: 200%;
+}
+
+div.miniatura{
+    float: left;
+    background-position: center;
+    background-size: cover;
+    border: 7px solid white;
+    padding-top: calc(33.3% * (100 / 200) * 0.7);
+    width: calc(33.3% * (100 / 200));
+}
+/* fim de estizacao do detalhe **************************************************************************************************/
+
+/* medias queries */
+
+@media screen and (max-width: 1400px){
+    section.banner{
+        height: 70vh;
+    }
+
+    div.dep1 .btn{
+        position: relative;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    section.banner{
+        height: 60vh;
+    }
+
+    nav.menu-desktop{
+        display: none ;
+    }
+
+    header nav.menu-mobile{
+        display: block;
+    }
+    
+    header nav.menu-mobile ul{
+        display: none;
+    }
+
+    header nav.menu-mobile ul li{
+    float: none;
+    list-style: none;
+    padding: 15px 20px;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+        text-align: center;
+    }
+
+    div.vitrine-carros{
+        width: 100%;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    div.container-detalhes{
+        float: none;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    div.car-destaque{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    section.banner{
+        background-size: auto 100%;
+        background-position: right;
+    }
+
+    .img2-texto p{
+        font-size: 25px;
+        padding-left: 20px;
+    }    
+
+    div.container-vitrine{
+        /* background-color: blanchedalmond; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 90px;
+    }
+
+    div.descricao .img-car{
+        margin-top: 30px;
+    }
+
+    section.depoimentos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.dep1{
+        width: 100%;
+        text-align: center;
+    }
+
+    div.dep2{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    div.dep1 li{
+        list-style: none;
+    }
+
+    div.vitrine-carros{
+        width: 100%;
+        margin-right: 30%;
+    }        
+
+    div.descricao{
+        max-width:40%;
+    }
+
+    div.sidebar{
+        width: 100%;
+    }
+
+    div.filtro-ano{
+        text-align: center;
+        display: inline-block;
+    }
+
+    div.sidebar {
+        text-align: center;
+    }
+
+    div.filtro-ano{
+        text-align: left;
+    }
+
+    div.btn1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    
+    .w50{
+        width: 100%;
+    }
+
+    div.descricao{
+        max-width:70%;
+    }
+}
+
+
+/* fim dos media queries */
